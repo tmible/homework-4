@@ -1,6 +1,6 @@
 from selenium.webdriver.common.keys import Keys
 
-from pages.default import Page
+from pages.virusmusic.default import Page
 from utils import wait_for_element_by_selector, wait_for_pop_up
 
 class ProfilePlaylistsPage(Page):

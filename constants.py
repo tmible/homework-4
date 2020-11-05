@@ -1,4 +1,7 @@
-BASE_URL = 'https://virusmusic.fun/'
+TIMEOUT = 10
+PERIOD = 0.1
+
+VIRUSMUSIC_BASE_URL = 'https://virusmusic.fun/'
 
 SUCCESS_POP_UP_CSS_SELECTOR = '.m-pop-up:not(.m-pop-up-error)'
 ERROR_POP_UP_CSS_SELECTOR = '.m-pop-up.m-pop-up-error'
@@ -23,3 +26,15 @@ NEW_PASSWORD_ERROR_MISMATCH_MESSAGE = 'Passwords must match'
 NEW_PASSWORD_ERROR_LENGTH_MESSAGE = 'Password must contain at least 3 letters or numbers'
 
 PLAYLIST_NAME = 'lol'
+
+TODO_BASE_URL = 'https://todo.mail.ru/'
+TODO_MAIN_URL = 'https://todo.mail.ru/inbox'
+TODO_AUTH_URL = 'https://account.mail.ru/login?page=https://todo.mail.ru/'
+TODO_LIST_URL_REGEX = 'https://todo.mail.ru/[1-9][0-9]*'
+
+LIST_LONG_NAME = 'topkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkek'
+LIST_XSS_NAME = '</p><script>alert(\'XSS\')</script><p>'
+LIST_NAME_PLACEHOLDER = 'Добавить название'
+LIST_LONG_DESCRIPTION = 'topkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkektopkek'
+LIST_DESCRIPTION_PLACEHOLDER = 'Добавить описание'
+FORBIDDEN_COLORS = ['background-color: rgb(0, 209, 238);']

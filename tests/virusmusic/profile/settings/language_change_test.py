@@ -1,4 +1,4 @@
-from tests.default import Test
+from tests.virusmusic.default import Test
 from pages.virusmusic.profile.settings import SettingsPage
 from selenium.webdriver.support.wait import WebDriverWait
 

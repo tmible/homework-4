@@ -1,4 +1,4 @@
-from tests.default import Test
+from tests.virusmusic.default import Test
 from pages.virusmusic.profile.settings import SettingsPage
 from constants import PASSWORD_ERROR, PASSWORD_ERROR_WRONG_OLD_MESSAGE
 from utils import wait_for_element_attribute_change

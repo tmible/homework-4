@@ -1,4 +1,4 @@
-from tests.default import Test
+from tests.virusmusic.default import Test
 from pages.virusmusic.profile.playlists import ProfilePlaylistsPage
 from utils import wait_for_pop_up
 from constants import PLAYLIST_NAME

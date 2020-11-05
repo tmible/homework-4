@@ -1,6 +1,6 @@
 import os
 
-from pages.default import Page
+from pages.virusmusic.default import Page
 from components.virusmusic.profile_data_form import ProfileDataForm
 from components.virusmusic.password_form import PasswordForm
 from utils import wait_for_pop_up, wait_for_element_by_selector, wait_for_element_by_xpath

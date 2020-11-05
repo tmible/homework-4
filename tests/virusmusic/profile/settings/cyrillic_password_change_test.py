@@ -1,6 +1,6 @@
 import os
 
-from tests.default import Test
+from tests.virusmusic.default import Test
 from pages.virusmusic.profile.settings import SettingsPage
 from constants import NEW_PASSWORD_ERROR, NEW_PASSWORD_ERROR_LENGTH_MESSAGE
 from utils import wait_for_element_attribute_change

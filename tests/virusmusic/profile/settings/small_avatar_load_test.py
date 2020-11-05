@@ -1,6 +1,6 @@
 import os
 
-from tests.default import Test
+from tests.virusmusic.default import Test
 from pages.virusmusic.profile.settings import SettingsPage
 from utils import wait_for_pop_up
 

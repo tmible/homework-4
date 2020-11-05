@@ -45,6 +45,39 @@ from tests.virusmusic.playlist.playlist_empty_name_change_test import PlaylistEm
 from tests.virusmusic.playlist.playlist_copy_link_test import PlaylistCopyLinkTest
 from tests.virusmusic.playlist.playlist_vk_share_test import PlaylistVkShareTest
 
+from tests.todo.list_creation.list_creation_test import ListCreationTest
+from tests.todo.list_creation.list_empty_name_creation_test import ListEmptyNameCreationTest
+from tests.todo.list_creation.list_long_name_creation_test import ListLongNameCreationTest
+from tests.todo.list_creation.list_spaces_name_creation_test import ListSpacesNameCreationTest
+from tests.todo.list_creation.list_xss_name_creation_test import ListXssNameCreationTest
+
+from tests.todo.list_deletion.list_deletion_left_menu_test import ListDeletionLeftMenuTest
+from tests.todo.list_deletion.list_deletion_test import ListDeletionTest
+
+from tests.todo.list_change.general.list_name_change_test import ListNameChangeTest
+from tests.todo.list_change.general.list_empty_name_change_test import ListEmptyNameChangeTest
+from tests.todo.list_change.general.list_long_name_change_test import ListLongNameChangeTest
+from tests.todo.list_change.general.list_spaces_name_change_test import ListSpacesNameChangeTest
+
+from tests.todo.list_change.general.list_description_change_test import ListDescriptionChangeTest
+from tests.todo.list_change.general.list_long_description_change_test import ListLongDescriptionChangeTest
+from tests.todo.list_change.general.list_space_description_change_test import ListSpaceDescriptionChangeTest
+
+from tests.todo.list_change.general.list_color_change_test import ListColorChangeTest
+
+from tests.todo.list_change.modal.list_name_change_test import ListNameChangeTest as ListNameModalChangeTest
+from tests.todo.list_change.modal.list_empty_name_change_test import ListEmptyNameChangeTest as ListEmptyNameModalChangeTest
+from tests.todo.list_change.modal.list_long_name_change_test import ListLongNameChangeTest as ListLongNameModalChangeTest
+from tests.todo.list_change.modal.list_spaces_name_change_test import ListSpacesNameChangeTest as ListSpacesNameModalChangeTest
+
+from tests.todo.list_change.modal.list_description_change_test import ListDescriptionChangeTest as ListDescriptionModalChangeTest
+from tests.todo.list_change.modal.list_long_description_change_test import ListLongDescriptionChangeTest as ListLongDescriptionModalChangeTest
+from tests.todo.list_change.modal.list_space_description_change_test import ListSpaceDescriptionChangeTest as ListSpaceDescriptionModalChangeTest
+
+from tests.todo.list_change.modal.list_color_change_test import ListColorChangeTest as ListColorModalChangeTest
+
+from tests.todo.list_change.modal.cancel_test import ListCancelChangeTest
+
 if __name__ == '__main__':
     settingsSuite = unittest.TestSuite((
         unittest.makeSuite(SmallAvatarLoadTest),
@@ -90,3 +123,43 @@ if __name__ == '__main__':
     unittest.TextTestRunner().run(playlistSuite)
     # playlistResult = unittest.TextTestRunner().run(playlistSuite)
     # sys.exit(not playlistsResult.wasSuccessful())
+
+    listCreationDeletionSuite = unittest.TestSuite((
+        unittest.makeSuite(ListCreationTest),
+        unittest.makeSuite(ListEmptyNameCreationTest),
+        unittest.makeSuite(ListLongNameCreationTest),
+        unittest.makeSuite(ListSpacesNameCreationTest),
+        unittest.makeSuite(ListXssNameCreationTest),
+        unittest.makeSuite(ListDeletionLeftMenuTest),
+        unittest.makeSuite(ListDeletionTest),
+    ))
+    unittest.TextTestRunner().run(listCreationDeletionSuite)
+    # listCreationDeletionResult = unittest.TextTestRunner().run(listCreationDeletionSuite)
+    # sys.exit(not listCreationDeletionResult.wasSuccessful())
+    listChangeSuite = unittest.TestSuite((
+        unittest.makeSuite(ListNameChangeTest),
+        unittest.makeSuite(ListEmptyNameChangeTest),
+        unittest.makeSuite(ListLongNameChangeTest),
+        unittest.makeSuite(ListSpacesNameChangeTest),
+        unittest.makeSuite(ListDescriptionChangeTest),
+        unittest.makeSuite(ListLongDescriptionChangeTest),
+        unittest.makeSuite(ListSpaceDescriptionChangeTest),
+        unittest.makeSuite(ListColorChangeTest),
+    ))
+    unittest.TextTestRunner().run(listChangeSuite)
+    # listChangeResult = unittest.TextTestRunner().run(listChangeSuite)
+    # sys.exit(not listChangeResult.wasSuccessful())
+    listModalChangeSuite = unittest.TestSuite((
+        unittest.makeSuite(ListNameModalChangeTest),
+        unittest.makeSuite(ListEmptyNameModalChangeTest),
+        unittest.makeSuite(ListLongNameModalChangeTest),
+        unittest.makeSuite(ListSpacesNameModalChangeTest),
+        unittest.makeSuite(ListDescriptionModalChangeTest),
+        unittest.makeSuite(ListLongDescriptionModalChangeTest),
+        unittest.makeSuite(ListSpaceDescriptionModalChangeTest),
+        unittest.makeSuite(ListColorModalChangeTest),
+        unittest.makeSuite(ListCancelChangeTest),
+    ))
+    unittest.TextTestRunner().run(listModalChangeSuite)
+    # listModalChangeResult = unittest.TextTestRunner().run(listModalChangeSuite)
+    # sys.exit(not listModalChangeResult.wasSuccessful())
